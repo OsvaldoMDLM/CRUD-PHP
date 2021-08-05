@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+/**globlales**/
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e9eb;
+}
+.m-2{
+    margin: 2rem;
+}
+.section{
+    background-color: rgb(10, 175, 175);
+    padding: .3rem;
+}
+.title{
+    color: white;
+    font-size: 3rem;
+}
+
+
+/**footer****/
+.footer{
+    background-color:#303030c7;
+    padding: .5rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+}

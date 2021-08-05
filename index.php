@@ -1,6 +1,4 @@
 <?php 
-
-include("models/model.php");
-include("controllers/crud.php");
-
+include("src/models/model.php");
+include("src/controllers/crud.php");
 ?>
