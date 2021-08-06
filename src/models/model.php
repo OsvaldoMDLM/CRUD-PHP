@@ -35,9 +35,7 @@ function Agregar($id_elemento, $imagen, $nombre, $cantidad, $descripcion)
         $sql = "INSERT INTO almacen (id, id_elemento, imagen, nombre, cantidad, descripcion) VALUES (NULL,'$id_elemento','$imagen','$nombre','$cantidad','$descripcion')";
         $agregado = mysqli_query($conexion, $sql);
         if ($agregado) {
-            echo "<script> alertify.success('Usuario Agregado'); setTimeout(function(){window.location='./home.php'},1200);</script>";
-        } else {
-            echo "<script> alertify.Error('Error'); </script>";
+            echo "<script>window.location='index.php';</script>";
         }
     }
 }
@@ -48,7 +46,7 @@ function Editar($id, $id_elemento, $imagen, $nombre, $cantidad, $descripcion)
     $sql = "UPDATE almacen SET id_elemento= '$id_elemento', imagen='$imagen',nombre='$nombre', cantidad='$cantidad',descripcion='$descripcion'  WHERE id='$id'";
     $editado = mysqli_query($conexion, $sql);
     if ($editado) {
-        header("Location: ../view/home.php");
+        header("Location: ../views/depot.php");
     } else {
         echo "<script> alertify.Error('Error'); </script>";
     }
@@ -60,6 +58,6 @@ function Eliminar($id)
     $sql = "DELETE FROM almacen WHERE id = '$id'";
     $resultado = mysqli_query($conexion, $sql);
     if ($resultado) {
-        header("Location: ../view/home.php");
+        header("Location: ../../index.php");
     }
 }

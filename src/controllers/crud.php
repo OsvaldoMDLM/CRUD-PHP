@@ -1,15 +1,16 @@
 <?php
-include("src/views/depot.php");
-/****create new user****/
-if (isset($_POST['crearUsuario'])) {
-    $nombre = $_POST['nombreC'];
-    $correo = $_POST['correoC'];
-    $login =  $_POST['loginC'];
-    if (isset($nombre) && isset($correo) && isset($login)) {
+/****create new item****/
+if (isset($_POST['AddElement'])) {
+    $id_elemento = $_POST['idElementoAdd'];
+    $imagen = $_POST['imagenAdd'];
+    $nombre = $_POST['nombreAdd'];
+    $cantidad = $_POST['cantidadAdd'];
+    $descripcion = $_POST['descripcionAdd'];
+    if (isset($id_elemento) && isset($imagen) && isset($nombre) && isset($cantidad) && isset($descripcion)) {
         Agregar($id_elemento, $imagen, $nombre, $cantidad, $descripcion);
     }
 }
-/****update user****/
+/****update item****/
 if (isset($_POST['editar'])) {
     $id = $_POST['id'];
     $nombre = $_POST['nombre'];
@@ -19,11 +20,11 @@ if (isset($_POST['editar'])) {
         Editar($id, $id_elemento, $imagen, $nombre, $cantidad, $descripcion);
     }
 }
-/****delete user****/
+/****delete item****/
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     if (isset($id)) {
-        include_once('../model/models.php');
+        include_once('../models/model.php');
         Eliminar($id);
     }
 }
