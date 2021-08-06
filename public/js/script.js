@@ -8,3 +8,8 @@ $("#AddModal").click(function() {
 $(".close-modal").click(function() {
     $(".modal").removeClass("is-active");
 });
+
+  
+$("#EditModal").click(function() {
+    $("#editmodal").addClass("is-active");  
+}); 

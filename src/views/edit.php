@@ -1,4 +1,4 @@
-<div class="modal" id="addmodal">
+<div class="modal" id="editmodal">
     <div class="modal-background close-modal"></div>
     <form action="" method="POST" class="">
         <div class="modal-card">

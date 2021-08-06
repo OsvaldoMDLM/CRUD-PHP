@@ -25,6 +25,7 @@ include("src/controllers/crud.php");
 </div>
 
 <?php include("add.php"); ?>
+<?php include("edit.php"); ?>
 
 <?php
 $elements = getElements();

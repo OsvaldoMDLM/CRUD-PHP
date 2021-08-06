@@ -2,7 +2,7 @@
     <div class="container">
         <div class="columns is-mobile">
             <div class="column is-3 is-offset-9">
-                <button onclick="openmodal()" class="button is-success px-6 mb-3" type="button" name="AddModal" id="AddModal" data-target=aria-haspopup="true" style="margin: 0 2rem;" ><i class="fas fa-plus"></i></button>
+                <button onclick="openmodal()" class="button is-success px-6 mb-3" type="button" name="AddModal" id="AddModal" data-target=aria-haspopup="true" ><i class="fas fa-plus"></i></button>
             </div>
         </div>
     </div>
@@ -31,7 +31,8 @@
                         <td class=""><?php echo $row["cantidad"]; ?></td>
                         <td class=""><?php echo $row["descripcion"]; ?></td>
                         <td class="">
-                            <a type="button" class="button is-info" href="../view/edituser.php?id=<?php echo $row['id'] ?>"><i class="fas fa-edit"></i></a>
+                            <!-- <a type="button" class="button is-info" href="../view/edituser.php?id=<?php echo $row['id'] ?>"><i class="fas fa-edit"></i></a> -->
+                            <a class="button is-info mr-2" name="EditModal" id="EditModal" data-target=aria-haspopup="true"><i class="fas fa-edit"></i></a>
                             <a class="button is-danger" id="eliminar" name="eliminar" href="src/controllers/crud.php?id=<?php echo $row['id']; ?>"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
