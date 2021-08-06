@@ -1,4 +1,11 @@
-<div class="section">
+<div class="section" style="padding-top: 8px;">
+    <div class="container">
+        <div class="columns is-mobile">
+            <div class="column is-3 is-offset-9">
+                <button onclick="openmodal()" class="button is-success px-6 mb-3" type="button" name="AddModal" id="AddModal" data-target=aria-haspopup="true" style="margin: 0 2rem;" ><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
     <div class="table-container">
         <table class="table is-striped is-narrow is-hoverable is-fullwidth">
             <thead class="has-background-link-light">

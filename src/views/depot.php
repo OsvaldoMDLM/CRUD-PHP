@@ -3,7 +3,7 @@
 <section class="hero is-small is-link">
     <div class="hero-body">
         <p class="title">
-            Almacen
+
         </p>
     </div>
 </section>
@@ -11,22 +11,19 @@
 include_once("src/models/model.php");
 include("src/controllers/crud.php");
 ?>
-
-<div class="container is-flex">
+<div class="container mx-6 mt-4 is-flex is-justify-content-center">
     <div class="field has-addons">
         <div class="control">
-            <input class="input" type="text" placeholder="Find a repository">
+            <input class="input" type="text" placeholder="item">
         </div>
         <div class="control">
             <a class="button is-info">
-                Search
+                Buscar
             </a>
         </div>
     </div>
-    <div class="mx-6 mt-4">
-        <button onclick="openmodal()" class="button is-success PX-5 modal-button" type="button" name="AddModal" id="AddModal" data-target=aria-haspopup="true"><i class="fas fa-plus"></i></button>
-    </div>
 </div>
+
 <?php include("add.php"); ?>
 
 <?php
