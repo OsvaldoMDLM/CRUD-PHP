@@ -1,6 +1,6 @@
 <div class="modal" id="editmodal">
     <div class="modal-background close-modal"></div>
-    <form action="" method="POST" class="">
+    <form action="" method="POST" class="form">
         <div class="modal-card">
             <header class="modal-card-head">
                 <p class="modal-card-title has-text-centered">Agregar Elemento</p>
