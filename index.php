@@ -1,4 +1,1 @@
-<?php 
-
-include("src/controllers/controller.php");
-?>
+<?php include("src/controllers/controller.php"); ?>
