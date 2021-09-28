@@ -1,5 +1,1 @@
-<?php
-
-include("src/views/depot.php");
-
-?>
+<?php include("src/views/depot.php"); ?>
